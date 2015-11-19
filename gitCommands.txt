@@ -1,0 +1,8 @@
+ON STARTUP
+git pull https://github.com/EvanMasterson/WAD-Project
+
+git init
+git add "files"
+git commit -m "whatever and your initials"
+git push -u origin master
+
