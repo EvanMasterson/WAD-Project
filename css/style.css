@@ -1,3 +1,16 @@
-h1{
+#search{
     color:red;
 }
+
+#map{
+    color:orange;
+}
+
+#rss{
+    color:purple;
+}
+
+#contact h1{
+    color:green;
+}
+
