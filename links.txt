@@ -1,0 +1,4 @@
+MAP
+    http://stackoverflow.com/questions/9881326/passing-xml-markers-to-google-map
+    
+    https://hpneo.github.io/gmaps/examples.html
