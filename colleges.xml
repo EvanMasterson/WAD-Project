@@ -2,219 +2,211 @@
 <?xml-stylesheet href="colleges.xsl" type="text/xsl"?>
 <institutes>
     <college>
-        <name>Trinity College Dublin</name>
-        <address>College Green</address>
-        <postcode>Dublin 2</postcode>
-        <type>University</type>
+        <name>Trinity College Dublin, </name>
+        <address>College Green, </address>
+        <postcode>Dublin 2, </postcode>
+        <type>University, </type>
         <phone>(01) 896 1000</phone>
         <marker/>
     </college>
     <college>
-        <name>University College Cork</name>
-        <address>Western Rd</address>
-        <postcode>Co. Cork</postcode>
-        <type>University</type>
+        <name>University College Cork, </name>
+        <address>Western Rd, </address>
+        <postcode>Co. Cork, </postcode>
+        <type>University, </type>
         <phone>(021) 490 3000</phone>
         <marker/>
     </college>
     <college>
-        <name>NUI Galway</name>
-        <address>University Rd</address>
-        <postcode>Galway</postcode>
-        <type>University</type>
+        <name>NUI Galway, </name>
+        <address>University Rd, </address>
+        <postcode>Galway, </postcode>
+        <type>University, </type>
         <phone>(091) 524 411</phone>
         <marker/>
     </college>
     <college>
-        <name>University of Dublin</name>
-        <address>Belfield</address>
-        <postcode>Dublin 4</postcode>
-        <type>University</type>
+        <name>University of Dublin, </name>
+        <address>Belfield, </address>
+        <postcode>Dublin 4, </postcode>
+        <type>University, </type>
         <phone>(01) 716 7777</phone>
         <marker/>
     </college>
     <college>
-        <name>University of Limerick</name>
-        <address>Castletroy</address>
-        <postcode>Co. Limerick</postcode>
-        <type>University</type>
+        <name>University of Limerick, </name>
+        <address>Castletroy, </address>
+        <postcode>Co. Limerick, </postcode>
+        <type>University, </type>
         <phone>(061) 202 700</phone>
         <marker/>
     </college>
     <college>
-        <name>Dublin postcode University</name>
-        <address>Glanevin</address>
-        <postcode>Dublin 9</postcode>
-        <type>University</type>
+        <name>Dublin postcode University, </name>
+        <address>Glanevin, </address>
+        <postcode>Dublin 9, </postcode>
+        <type>University, </type>
         <phone>(01) 700 5000</phone>
         <marker/>
     </college>
     <college>
-        <name>National College of Ireland</name>
-        <address>Mayor Street, IFSC</address>
-        <postcode>Dublin 1</postcode>
-        <type>College</type>
+        <name>National College of Ireland, </name>
+        <address>Mayor Street, IFSC, </address>
+        <postcode>Dublin 1, </postcode>
+        <type>College, </type>
         <phone>(01) 449 8500</phone>
         <marker/>
     </college>
     <college>
-        <name>Dublin Institute of Technology</name>
-        <address>Aungier St</address>
-        <postcode>Dublin 2</postcode>
-        <type>Institute of Technology</type>
+        <name>Dublin Institute of Technology, </name>
+        <address>Aungier St, </address>
+        <postcode>Dublin 2, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(01) 402 3000</phone>
         <marker/>
     </college>
     <college>
-        <name>Maynooth University</name>
-        <address>Maynooth</address>
-        <postcode>Co. Kildare</postcode>
-        <type>University</type>
+        <name>Maynooth University, </name>
+        <address>Maynooth, </address>
+        <postcode>Co. Kildare, </postcode>
+        <type>University, </type>
         <phone>(01) 708 6000</phone>
         <marker/>
     </college>
     <college>
-        <name>Cork Intitute of Technology</name>
-        <address>Rossa Ave</address>
-        <postcode>Co. Cork</postcode>
-        <type>Intitute of Technology</type>
+        <name>Cork Intitute of Technology, </name>
+        <address>Rossa Ave, </address>
+        <postcode>Co. Cork, </postcode>
+        <type>Intitute of Technology, </type>
         <phone>(021) 432 6100</phone>
         <marker/>
     </college>
     <college>
-        <name>Limerick Institute of Technology</name>
-        <address>Moylish Park</address>
-        <postcode>Limerick</postcode>
-        <type>Institute of Technology</type>
+        <name>Limerick Institute of Technology, </name>
+        <address>Moylish Park, </address>
+        <postcode>Limerick, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(061) 208285</phone>
         <marker/>
     </college>
     <college>
-        <name>Institute of Technology Tallaght</name>
-        <address>Old Blessington Rd</address>
-        <postcode>Dublin 24</postcode>
-        <type>Institute of Technology</type>
+        <name>Institute of Technology Tallaght, </name>
+        <address>Old Blessington Rd, </address>
+        <postcode>Dublin 24, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(01) 404 2000</phone>
         <marker/>
     </college>
     <college>
-        <name>Waterford Institute of Technology</name>
-        <address>Cork Rd</address>
-        <postcode>Waterford</postcode>
-        <type>Institute of Technology</type>
+        <name>Waterford Institute of Technology, </name>
+        <address>Cork Rd, </address>
+        <postcode>Waterford, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(051) 302 000</phone>
         <marker/>
     </college>
     <college>
-        <name>Galway-Mayo Institute of Technology</name>
-        <address>Old Dublin Rd</address>
-        <postcode>Galway</postcode>
-        <type>Institute of Technology</type>
+        <name>Galway-Mayo Institute of Technology, </name>
+        <address>Old Dublin Rd, </address>
+        <postcode>Galway, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(091) 753 161</phone>
         <marker/>
     </college>
     <college>
-        <name>Dundalk Institute of Technology</name>
-        <address>Dublin Rd, Dundalk</address>
-        <postcode>Co. Louth</postcode>
-        <type>Institute of Technology</type>
+        <name>Dundalk Institute of Technology, </name>
+        <address>Dublin Rd, Dundalk, </address>
+        <postcode>Co. Louth, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(042) 937 0200</phone>
         <marker/>
     </college>
     <college>
-        <name>Institute of Technology, Sligo</name>
-        <address>Ash Ln</address>
-        <postcode>Sligo</postcode>
-        <type>Institute of Technology</type>
+        <name>Institute of Technology, Sligo, </name>
+        <address>Ash Ln, </address>
+        <postcode>Sligo, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(071) 915 5222</phone>
         <marker/>
     </college>
     <college>
-        <name>Institute of Technology, Blanchardstown</name>
-        <address>Blanchardstown Rd North</address>
-        <postcode>Dublin 15</postcode>
-        <type>Institute of Technology</type>
+        <name>Institute of Technology, Blanchardstown, </name>
+        <address>Blanchardstown Rd North, </address>
+        <postcode>Dublin 15, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(01) 885 1000</phone>
         <marker/>
     </college>
     <college>
-        <name>Dún Laoghaire Institute of Art, Design and Technology</name>
-        <address>Kill Avenue, Dun Laoghaire</address>
-        <postcode>Dublin</postcode>
-        <type>College</type>
+        <name>Dún Laoghaire Institute of Art, Design and Technology, </name>
+        <address>Kill Avenue, Dun Laoghaire, </address>
+        <postcode>Dublin, </postcode>
+        <type>College, </type>
         <phone>(01) 239 4000</phone>
         <marker/>
     </college>
     <college>
-        <name>Athlone Institute of Technology</name>
-        <address>Dublin Rd, Athlone</address>
-        <postcode>Co. Westmeath</postcode>
-        <type>Institute of Technology</type>
+        <name>Athlone Institute of Technology, </name>
+        <address>Dublin Rd, Athlone, </address>
+        <postcode>Co. Westmeath, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(090) 646 8000</phone>
         <marker/>
     </college>
     <college>
-        <name>Royal College of Surgeons in Ireland</name>
-        <address>123 St Stephen's Green</address>
-        <postcode>Dublin 2</postcode>
-        <type>College</type>
+        <name>Royal College of Surgeons in Ireland, </name>
+        <address>123 St Stephen's Green, </address>
+        <postcode>Dublin 2, </postcode>
+        <type>College, </type>
         <phone>(01) 402 2100</phone>
         <marker/>
     </college>
     <college>
-        <name>Dublin Business School</name>
-        <address>13-14 Aungier St</address>
-        <postcode>Dublin</postcode>
-        <type>College</type>
+        <name>Dublin Business School, </name>
+        <address>13-14 Aungier St, </address>
+        <postcode>Dublin, </postcode>
+        <type>College, </type>
         <phone>(01) 417 7500</phone>
         <marker/>
     </college>
     <college>
-        <name>Institute of Technology, Carlow</name>
-        <address>Kilkenny Rd</address>
-        <postcode>Carlow</postcode>
-        <type>Institute of Technology</type>
+        <name>Institute of Technology, Carlow, </name>
+        <address>Kilkenny Rd, </address>
+        <postcode>Carlow, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(059) 917 5000</phone>
         <marker/>
     </college>
     <college>
-        <name>Institute of Technology, Tralee</name>
-        <address>Clash, Tralee</address>
-        <postcode>Co. Kerry</postcode>
-        <type>Institute of Technology</type>
+        <name>Institute of Technology, Tralee, </name>
+        <address>Clash, Tralee, </address>
+        <postcode>Co. Kerry, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(066) 714 5600</phone>
         <marker/>
     </college>
     <college>
-        <name>Letterkenny Institute of Technology</name>
-        <address>Port Rd, Letterkenny</address>
-        <postcode>Co. Donegal</postcode>
-        <type>Institute of Technology</type>
+        <name>Letterkenny Institute of Technology, </name>
+        <address>Port Rd, Letterkenny, </address>
+        <postcode>Co. Donegal, </postcode>
+        <type>Institute of Technology, </type>
         <phone>(074) 918 6000</phone>
         <marker/>
     </college>
     <college>
-        <name>IBAT College</name>
-        <address>16-19 Wellington Quay, Temple Bar</address>
-        <postcode>Dublin 2</postcode>
-        <type>College</type>
+        <name>IBAT College, </name>
+        <address>16-19 Wellington Quay, Temple Bar, </address>
+        <postcode>Dublin 2, </postcode>
+        <type>College, </type>
         <phone>(01) 807 5055</phone>
         <marker/>
     </college>
     <college>
-        <name>Griffith College Dublin</name>
-        <address>S Circular Rd</address>
-        <postcode>Dublin 8</postcode>
-        <type>College</type>
+        <name>Griffith College Dublin, </name>
+        <address>S Circular Rd, </address>
+        <postcode>Dublin 8, </postcode>
+        <type>College, </type>
         <phone>(01) 415 0400</phone>
-        <marker/>
-    </college>
-    <college>
-        <name></name>
-        <address></address>
-        <postcode></postcode>
-        <type></type>
-        <phone></phone>
         <marker/>
     </college>
 </institutes>
