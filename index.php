@@ -5,10 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" href="js/gmaps.js"></script>
 	</head>
 	<body>
-		<div class="navbar-fixed-top navbar-inverse" id="home">
-		<div class="container" >
+		<div class="navbar-fixed-top navbar-inverse">
+		<div class="container" id="home">
 			<div class="navbar-brand">
 			Find-a-Future
 		    </div>
@@ -19,6 +22,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">Home</a></li>
 					<li><a href="#locator">Locator</a></li>
+					<li><a href="#collegeList">College List</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -54,7 +58,7 @@ SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEA
 		</div>
 	</div>
 	
-	<div class="container">
+	<div class="container" id="collegeList">
 		<?php include ("xmlTransform.php");?>
 	</div>
 	
@@ -78,14 +82,12 @@ SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEA
 	</div>
 	<div class="panel-footer" id="footer">
 		<div class="container">
-			<div class="navbar-brand">
-			<a href="#">Find-a-Future </a>
-			</div>
+			<footer class="text-center">Find-a-Future<br/><a href="#">Back to Top</a></footer>
 		</div>
 	</div>	
 		
 		
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
 	<script src="js/bootstrap.js"></script>
 	<script>
 	$(function() {
@@ -102,6 +104,13 @@ SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEA
     }
   });
 });
+	
+	new GMaps({
+	  div: '#map',
+	  lat: -12.043333,
+	  lng: -77.028333
+	});
+	
 	</script>
 	</body>
 </html>
