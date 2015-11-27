@@ -5,7 +5,7 @@
 		
 	
 		<title>Find a Future</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/scroller.css" />
@@ -28,7 +28,7 @@
 	</head>
 	<body>
 		<div class="navbar-static-top navbar-inverse" id="home">
-		<div class="container padding" id="top">
+		<div class="container padding" >
 			<div class="navbar-brand">
 			Find-a-Future
 		    </div>
