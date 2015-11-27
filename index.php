@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/scroller.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-		<script type="text/javascript" href="js/gmaps.js"></script>
+		<script type="text/javascript" src="js/gmaps.js"></script>
 		<script type = "text/javascript" href = "JQuery.js" > </script>
 		<script type = "text/javascript" href = "js/Scroll.js" > </script>
 		<script type="text/javascript" src="engine1/jquery.js"></script>
@@ -112,7 +112,6 @@
 				 SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH SEARCH
 			</div>
 			<div class="col-md-6" id="map">
-				
 					MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP 
 			</div>
 			<div class="col-md-3" id="rss">
@@ -180,18 +179,21 @@
 	          scrollTop: target.offset().top
 	        }, 1000);
 	        return false;
-	      }1000
+	      }
 	    }
 	  });
 	});
 	
-	$(document).ready(function(){
-		var map = new GMaps({
-		  div: "#map",
-		  lat: -12.043333,
-		  lng: -77.028333
-		});
-	});
+		/*global GMaps*/
+		var map;
+    	$(document).ready(function(){
+	      map = new GMaps({
+	        div: "#map",
+	        lat: -12.043333,
+	        lng: -77.028333
+	      });
+	    });
+    
 	
 	
 	</script>
