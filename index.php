@@ -5,16 +5,14 @@
 		
 	
 		<title>Find a Future</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/scroller.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script type="text/javascript" src="js/gmaps.js"></script>
-		<script type = "text/javascript" href = "JQuery.js" > </script>
 		<script type = "text/javascript" href = "js/Scroll.js" > </script>
-		<script type="text/javascript" src="engine1/jquery.js"></script>
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -129,7 +127,7 @@
 	<section id="img3"></section>
 	<section id="content3">
 		<div class="container padding" id="contact">
-		<form role="form">
+		<form role="form" action="contact.php" method="post" id="contactForm">
 			<div class="form-group">
 				<h1>CONTACT FORM</h1>
 				<label for="email">Email:</label>
@@ -194,7 +192,7 @@
 	      });
 	    });
     
-	
+		
 	
 	</script>
 	</body>

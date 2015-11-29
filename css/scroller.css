@@ -52,17 +52,6 @@ html, body,
 	background-attachment: fixed;
 }
 
-#img1 {
-	background-image: url("../img/NCI.png");
-}
-
-#img2 {
-	background-image: url("../img/DCU.png");
-}
-
-#img3{
-	background-image: url("../img/TCD.png");
-}
 
 #content1{
 height: auto;
@@ -84,5 +73,33 @@ height: auto;
 width: auto;	
 }
 
+@media screen and (min-width:480px){
+#img1 {
+	background-image: url("../img/NCI.png");
+}
+
+#img2 {
+	background-image: url("../img/DCU.png");
+}
+
+#img3{
+	background-image: url("../img/TCD.png");
+}
+}
+
+@media screen and (min-width:0px) and (max-width:480px){
+	
+#img1 {
+	background-image: url("../img/NCI_MOB.png");
+}
+
+#img2 {
+	background-image: url("../img/DCU_MOB.png");
+}
+
+#img3{
+	background-image: url("../img/TCD_MOB.png");
+}
+}
 
 
