@@ -19,6 +19,10 @@
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/mapMarkers.js"></script>
+		<!-- Scroll Animation 
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<script src="js/viewportchecker.js"></script> -->
+	
 		
 	</head>
 	<body>
@@ -51,40 +55,40 @@
 	<section id="img1"></section>
 	<div id="locator">
 	<section id="content1">
-		<div class="container" id="map" onload="mapMarkers()">
+		<div  class="container" id="map" onload="mapMarkers()">
 			</div>
 		</section>
 			<section id="content2">
 				<div class="container padding" id="menu">
-					<div class="row" id="menu">
-					<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>
-					<div class="col-md-9" id="inputs">
-					<form role="form" action="colleges.php" method="post">
-						<div class="form-group">
-							<label for="name">Name of College:</label>
-							<input type="text" class="form-control" name="cName" placeholder=" College Name" />
-						</div>
-						<div class="form-group">
-							<label for="address">Address:</label>
-							<input type="text" class="form-control" name="address" placeholder="Your Address here"/>
-						</div>
-						<div class="form-group">
-							<label for="postcode">Postcode: </label>
-							<input type="text" class="form-control" name="postcode" placeholder="Your Postcode here"/>
-						</div>
-						<div class="form-group">
-							<label for="type">Type: </label>
-							<input type="text" class="form-control" name="type" placeholder="Univeristy/College/Other"/>
-						</div>
-						<div class="form-group">
-							<label for="phoneNumber">Phone Number: </label>
-							<input type="text" class="form-control" name="pNumber" placeholder="Your Phone number here"/>
-						</div>
-						<button type="submit" class="btn btn-default" id="submit">Submit</button>
-						
-					</form>
-					</div>
-					</div>
+					<!--<div class="row" id="menu">-->
+					<!--<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>-->
+						<!--<div class="col-md-9" id="inputs">-->
+							<form role="form" action="colleges.php" method="post">
+								<div class="form-group">
+									<h1>Add a College Here!</h1>
+									<label for="name">Name of College:</label>
+									<input type="text" class="form-control" name="cName" placeholder="College Name" />
+								</div>
+								<div class="form-group">
+									<label for="address">Address:</label>
+									<input type="text" class="form-control" name="address" placeholder="Your Address here"/>
+								</div>
+								<div class="form-group">
+									<label for="postcode">Postcode: </label>
+									<input type="text" class="form-control" name="postcode" placeholder="Your Postcode here"/>
+								</div>
+								<div class="form-group">
+									<label for="type">Type: </label>
+									<input type="text" class="form-control" name="type" placeholder="Univeristy/College/Other"/>
+								</div>
+								<div class="form-group">
+									<label for="phoneNumber">Phone Number: </label>
+									<input type="text" class="form-control" name="pNumber" placeholder="Your Phone number here"/>
+								</div>
+								<button type="submit" class="btn btn-default" id="submit">Add College!</button>
+							</form>
+						<!--</div>-->
+					<!--</div>-->
 			</div>
 			</section>
 			<section id="content3">
@@ -96,7 +100,7 @@
 	
 	<section id="img2"></section>
 	<section id="content4">
-		<div class="container" id="collegeList">
+		<div class= "container" id="collegeList" >
 		<?php include ("xmlTransform.php");?>
 		</div>
 	</section>
@@ -159,5 +163,14 @@
 	});
 
 	</script>
+	
+	<!-- <script type="text/javascript">
+		jQuery(document).ready(function() {
+			jQuery('#collegeList').addClass("hidden").viewportChecker({
+			  classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+			 offset: 100    
+			 });   
+		});            
+</script> -->
 	</body>
 </html>
