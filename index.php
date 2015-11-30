@@ -60,6 +60,9 @@
 		</section>
 			<section id="content2">
 				<div class="container padding" id="menu">
+					
+					<!-- Good example https://isl.co/contact/ -->
+					
 					<!--<div class="row" id="menu">-->
 					<!--<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>-->
 						<!--<div class="col-md-9" id="inputs">-->
