@@ -55,22 +55,32 @@
 			</div>
 		</section>
 			<section id="content2">
-				<div class="container" >
+				<div class="container padding" id="menu">
 					<div class="row" id="menu">
-					<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add <br> a College <br>Here!</h1> </div>
+					<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>
 					<div class="col-md-9" id="inputs">
-					<form action="rss.xml" method="post" >
-						Name of College: &nbsp;&nbsp;
-						<input type="text" name="cName" placeholder=" College Name" > <br><br>
-						Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="address" placeholder="Your Address here"> <br><br>
-						Postcode: &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-						<input type="text" name="postcode" placeholder="Your Postcode here"> <br><br>
-						Type:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="type" placeholder="Univeristy/College/Other"> <br><br>
-						Phone Number: &nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="text" name="pNumber" placeholder="Your Phone number here"> <br> <br> 
-						<input type="submit" name="submit" id="submit" style="width: 210px;">
+					<form role="form" action="colleges.php" method="post">
+						<div class="form-group">
+							<label for="name">Name of College:</label>
+							<input type="text" class="form-control" name="cName" placeholder=" College Name" />
+						</div>
+						<div class="form-group">
+							<label for="address">Address:</label>
+							<input type="text" class="form-control" name="address" placeholder="Your Address here"/>
+						</div>
+						<div class="form-group">
+							<label for="postcode">Postcode: </label>
+							<input type="text" class="form-control" name="postcode" placeholder="Your Postcode here"/>
+						</div>
+						<div class="form-group">
+							<label for="type">Type: </label>
+							<input type="text" class="form-control" name="type" placeholder="Univeristy/College/Other"/>
+						</div>
+						<div class="form-group">
+							<label for="phoneNumber">Phone Number: </label>
+							<input type="text" class="form-control" name="pNumber" placeholder="Your Phone number here"/>
+						</div>
+						<button type="submit" class="btn btn-default" id="submit">Submit</button>
 						
 					</form>
 					</div>
