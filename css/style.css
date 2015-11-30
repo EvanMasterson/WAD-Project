@@ -24,10 +24,6 @@
     font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
 }
 
-/* #collegeInfo{
-      color: black;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;  
-}  */
 
 #menu{
     /* background-image: url("../img/menuIMG.png"); */ 
@@ -36,11 +32,13 @@
     margin-bottom:30px;
     border: 1px solid black; 
     height: auto;
-    color: black;
+    color: white;
     font-family:'Times New Roman', serif;
-    background-color: white;
     margin-top: 50px;
     padding: 0;
+    width: 70%;
+    background-color: orange;
+    
 }
 
 #menuHeader{
@@ -50,39 +48,42 @@
     color: white;
     float: left;
     position: relative;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
    
 }
 
-#inputs{
-    top: 60px;
+ #inputs{
     height: auto;
-    width:70%;
+    width:60%;
     left:60px;
     position: relative;
     float: left;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+    background-color: #43567F;
+    text-shadow: 1px 1px 2px black; 
+    
 }
 
-input {
+#inputs input {
         width: auto;
         clear: both;
         float: right;
-        right: 50%;
+        /* top: 60px; */
+        right: 5%;
         position: relative;
+        font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;
     }
 
 
 
 #submit{
     color: white;
-    background-color: #EDA372;
+    background-color: #49769D;
     font-weight: bold;
     border-radius: 10px;
-    width: 100px;
+    width: 70px;
 }
 
-/* #menuColor h4:{
-    color: white;
-} */
 
 #map{
     color:orange;
@@ -160,4 +161,11 @@ input {
     #menu{
         float:none;
     }
+    /* #menuHeader{
+        float: none;
+    }
+    #inputs{
+        width:auto;
+        height: auto;
+    } */
 }
