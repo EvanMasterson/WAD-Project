@@ -91,14 +91,17 @@ width: auto;
 	
 #img1 {
 	background-image: url("../img/NCI_MOB.png");
+	/* background-size: auto; */
 }
 
 #img2 {
 	background-image: url("../img/DCU_MOB.png");
+	background-size: auto;
 }
 
 #img3{
 	background-image: url("../img/TCD_MOB.png");
+	background-size: auto;
 }
 }
 

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="colleges.xsl" type="text/xsl"?>
+<rss version="2.0">
+<channel>
 <institutes>
     <college>
         <name>Trinity College Dublin, </name>
@@ -210,3 +212,5 @@
         <marker/>
     </college>
 </institutes>
+</channel>
+</rss>
