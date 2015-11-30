@@ -5,24 +5,21 @@
 		
 	
 		<title>Find a Future</title>
-		<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/scroller.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0f_37S0OieQsnrm646prpK6JL2FlUvac"></script>
 		<script type="text/javascript" src="js/gmaps.js"></script>
-		<script type = "text/javascript" href = "js/Scroll.js" > </script>
+		<script type = "text/javascript" href = "js/Scroll.js" > </script> 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/mapMarkers.js"></script>
 		
-		<script>
-		  $(function() {
-		    $( "#accordion" ).accordion();
-		  });
-		</script>
 	</head>
 	<body>
 		<div class="navbar-static-top navbar-inverse" id="home">
@@ -52,62 +49,49 @@
 
 	</nav>
 	<section id="img1"></section>
+	<div id="locator">
 	<section id="content1">
-		<div class="container" id="locator">
-		<div class="row">
-			<div class="col-md-3" id="search">
-				<div id="menu">
-					<form>
-						<h4> Add a College Here!</h4>
-						<br>
-						Name of College: <br>
-						<input type="text" name="cName">
-						<br>
-						<br>
-						Address: <br>
-						<input type="text" name="address">
-						<br>
-						<br>
-						Postcode: <br>
-						<input type="text" name="postcode">
-						<br>
-						<br>
-						Type: <br>
-						<input type="text" name="type">
-						<br>
-						<br>
-						Phone Number: <br>
-						<input type="text" name="pNumber">
-						<br>
-						<br>
-						<input type="submit" name="submit">
-						<br>
+			<div class="container" id="menu">
+					<form action="colleges.php" method="post">
+						<div id="menuHeader"> <br><br><h3 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h3> </div>
+						<div id="inputs" class="text-left"> Name of College: &nbsp;&nbsp;
+						<input type="text" name="cName" > <br><br>
+						Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="address"> <br><br>
+						Postcode: &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+						<input type="text" name="postcode"> <br><br>
+						Type:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="type"> <br><br>
+						Phone Number: &nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="pNumber"> <br> <br> 
+						<input type="submit" name="submit" id="submit">
+						</div>
 					</form>
-					
-				</div>
 			</div>
-			<div class="col-md-6" id="map">
-					<script rel="javascript" href="js/gmaps.js" ></script>
-					MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP 
+		</section>
+			<section id="content2">
+			<div class="container" id="map" onload="mapMarkers()">
 			</div>
-			<div class="col-md-3" id="rss">
-				EED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED
+			</section>
+			<section id="content3">
+			<div class="container" id="rss">
+				RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED
 			</div> 
-		</div>
+			</section>
 	</div>
-	</section>
+	
 	<section id="img2"></section>
-	<section id="content2">
+	<section id="content4">
 		<div class="container" id="collegeList">
 		<?php include ("xmlTransform.php");?>
 		</div>
 	</section>
 	<section id="img3"></section>
-	<section id="content3">
+	<section id="content5">
 		<div class="container padding" id="contact">
 		<form role="form" action="contact.php" method="post" id="contactForm">
 			<div class="form-group">
-				<h1>CONTACT FORM</h1>
+				<h2>Contact Form</h2>
 				<label for="email">Email:</label>
 				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
 			</div>
@@ -125,14 +109,14 @@
 	</section>
 
 	
-	<section id="content4">
+	<section id="content6">
 		<div class="panel-footer" id="footer">
 			<div class="container">
-				<footer class="text-center">Find-a-Future<br/>
-						<a href="#home">Back to Top</a><br />
-						<a href="#locator">Locator</a><br/>
-						<a href="#collegeList">College List</a><br/>
-						<a href="#contact">Contact</a>
+				<footer class="text-center" id="FAFFooter">Find-a-Future<br/>
+						<a href="#home" id="homeStyle">Back to Top</a><br />
+						<a href="#locator" id="locationStyle">Locator</a><br/>
+						<a href="#collegeList" id="cListStyle">College List</a><br/>
+						<a href="#contact" id="contactStyle">Contact</a>
 				</footer>
 			</div>
 		</div>	
@@ -159,19 +143,7 @@
 	    }
 	  });
 	});
-	
-		/*global GMaps*/
-		var map;
-    	$(document).ready(function(){
-	      map = new GMaps({
-	        div: "#map",
-	        lat: -12.043333,
-	        lng: -77.028333
-	      });
-	    });
-    
-		
-	
+
 	</script>
 	</body>
 </html>

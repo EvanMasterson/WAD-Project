@@ -1,25 +1,163 @@
-#search{
-    color: #505050;
-}
+/* #search{
+    color: white;
+} */
 
-#map{
-    color:orange;
-}
+
 
 #rss{
     color:purple;
+    margin-top: 450px
 }
 
-#contact h1{
-    color:green;
-}
-#menu{
-    background-color: black;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 50px;
-    margin-bottom:50px;
-    border: solid black;
-    height: 450px;
+#contact h2{
+    color:#3190B0;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
     
+}
+
+#contact{
+      color: black;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;  
+}
+#collegeInfo {
+    color: #3190B0;
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+}
+
+/* #collegeInfo{
+      color: black;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;  
+}  */
+
+#menu{
+    /* background-image: url("../img/menuIMG.png"); */ 
+    text-align: center;
+    font-size: 17px;
+    margin-bottom:30px;
+    border: 1px solid black; 
+    height: auto;
+    color: black;
+    font-family:'Times New Roman', serif;
+    background-color: white;
+    margin-top: 50px;
+    padding: 0;
+}
+
+#menuHeader{
+    min-height: 370px;
+    width: 30%;
+    background-image: url("../img/menuIMG.png");
+    color: white;
+    float: left;
+    position: relative;
+   
+}
+
+#inputs{
+    top: 60px;
+    height: auto;
+    width:70%;
+    left:60px;
+    position: relative;
+    float: left;
+}
+
+input {
+        width: auto;
+        clear: both;
+        float: right;
+        right: 50%;
+        position: relative;
+    }
+
+
+
+#submit{
+    color: white;
+    background-color: #EDA372;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100px;
+}
+
+/* #menuColor h4:{
+    color: white;
+} */
+
+#map{
+    color:orange;
+    min-height:700px;
+    margin-top:100px;
+    margin-bottom:50px;
+    /*
+    For shadow behind map */
+    background-color:#CCC;
+    position:relative;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888888;
+}
+/* #img2{
+    margin-top: 50px;
+} */
+
+#homeStyle{
+    color:#3190B0;
+    text-decoration:none; 
+    font-family:'Times New Roman', serif;
+    font-size: 20px;
+    float: left;
+    left: 20%;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+}
+
+#locationStyle{
+    color:#3190B0;
+    text-decoration:none; 
+    font-family:'Times New Roman', serif;
+    font-size: 20px;
+    float: left;
+    left: 38%;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+}
+
+#cListStyle{
+    color:#3190B0;
+    text-decoration:none; 
+    font-family:'Times New Roman', serif;
+    font-size: 20px;
+    float: right;
+    right: 38%;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+}
+
+#contactStyle{
+    color:#3190B0;
+    text-decoration:none; 
+    font-family:'Times New Roman', serif;
+    font-size: 20px;
+    float: right;
+    right:20%;
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+}
+
+#FAFFooter{
+    color: grey;
+    text-decoration:none; 
+    font-family:'Times New Roman', serif;
+    font-size: 25px;
+}
+
+@media screen and(max-width:480px){
+    #menu{
+        float:none;
+    }
 }

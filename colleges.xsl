@@ -12,7 +12,8 @@
 				<title>Colleges in Ireland</title>
 			</head>
 			<body>
-				<h2>College Information</h2>
+				<link rel="stylesheet" href="css/style.css" />
+				<h2 id="collegeInfo">College Information</h2>
 				<xsl:apply-templates select="//college"/>
 			</body>
 		</html>

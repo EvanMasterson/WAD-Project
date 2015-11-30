@@ -174,7 +174,7 @@ var GMaps = (function(global) {
   var GMaps = function(options) {
     if (!this) return new GMaps(options);
 
-    options.zoom = options.zoom || 15;
+    options.zoom = options.zoom || 7;
     options.mapType = options.mapType || 'roadmap';
 
     var valueOrDefault = function(value, defaultValue) {
@@ -1172,7 +1172,7 @@ GMaps.prototype.getFromFusionTables = function(options) {
   delete options.events;
 
   var fusion_tables_options = options,
-      var layer = new google.maps.FusionTablesLayer(fusion_tables_options);
+      layer = new google.maps.FusionTablesLayer(fusion_tables_options);
 
   for (var ev in events) {
     (function(object, name) {
