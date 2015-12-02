@@ -113,11 +113,11 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    float: left;
-    left: 20%;
-    position: absolute;
-    z-index: 6;
-    top: 50%;
+    /*float: left;*/
+    /*left: 20%;*/
+    /*position: absolute;*/
+    /*z-index: 6;*/
+    /*top: 50%;*/
 }
 
 #locationStyle{
@@ -125,11 +125,11 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    float: left;
-    left: 38%;
-    position: absolute;
-    z-index: 6;
-    top: 50%;
+    /*float: left;*/
+    /*left: 38%;*/
+    /*position: absolute;*/
+    /*z-index: 6;*/
+    /*top: 50%;*/
 }
 
 #cListStyle{
@@ -137,11 +137,11 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    float: right;
-    right: 38%;
-    position: absolute;
-    z-index: 6;
-    top: 50%;
+    /*float: right;*/
+    /*right: 38%;*/
+    /*position: absolute;*/
+    /*z-index: 6;*/
+    /*top: 50%;*/
 }
 
 #contactStyle{
@@ -149,11 +149,11 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    float: right;
-    right:20%;
-    position: absolute;
-    z-index: 6;
-    top: 50%;
+    /*float: right;*/
+    /*right:20%;*/
+    /*position: absolute;*/
+    /*z-index: 6;*/
+    /*top: 50%;*/
 }
 
 #FAFFooter{
@@ -161,6 +161,8 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 25px;
+    margin-bottom:6%;
+    margin-top:3%;
 }
 
 /*@media screen and(max-width:480px){*/
@@ -176,11 +178,7 @@
     } */
 /*}*/
 
-/* For Scroll 
-.post{
-	margin-bottom: 80px;
-	text-align: center;
-}
+/* For Scroll */
 
 .hidden{
 	opacity: 0;
@@ -244,5 +242,3 @@
 		transform: translateY(0);
 	}
 }
-
-*/

@@ -39,7 +39,7 @@ if(file_exists('colleges.xml')) {
 } else{
     exit('Failed to open colleges.xml');
 }
-    file_put_contents('books.xml', $xml ->asXML() );
+    file_put_contents('colleges.xml', $xml ->asXML() );
     
     writeRSS();
     function writeRSS(){

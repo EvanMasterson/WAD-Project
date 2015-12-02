@@ -133,13 +133,15 @@
 	
 	<section id="content6">
 		<div class="panel-footer" id="footer">
-			<div class="container">
+			<div class="container padding">
+				<div class="row">
 				<footer class="text-center" id="FAFFooter">Find-a-Future<br/>
-						<a href="#home" id="homeStyle">Back to Top</a><br />
-						<a href="#locator" id="locationStyle">Locator</a><br/>
-						<a href="#collegeList" id="cListStyle">College List</a><br/>
-						<a href="#contact" id="contactStyle">Contact</a>
+							<div class="col-md-3"><a href="#home" id="homeStyle" >Back to Top</a><br /></div>
+							<div class="col-md-3"><a href="#locator" id="locationStyle" >Locator</a><br/></div>
+							<div class="col-md-3"><a href="#collegeList" id="cListStyle" >College List</a><br/></div>
+							<div class="col-md-3"><a href="#contact" id="contactStyle" >Contact</a></div>
 				</footer>
+				</div>
 			</div>
 		</div>	
 	</section>
