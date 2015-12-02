@@ -19,7 +19,6 @@
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/mapMarkers.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 		<!-- Scroll Animation 
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 		<script src="js/viewportchecker.js"></script> -->
@@ -115,15 +114,15 @@
 			<div class="form-group">
 				<h2>Contact Form</h2>
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="example@example.com"/>
+				<input type="email" class="form-control" class="contact_form" id="contact_email" name="contact_email" placeholder="example@example.com"/>
 			</div>
 			<div class="form-group">
 				<label for="name">Name:</label>
-				<input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="Your name here"/>
+				<input type="text" class="form-control"class="contact_form" id="contact_name" name="contact_name" placeholder="Your name here"/>
 			</div>
 			<div class="form-group">
 				<label for="message">Message:</label>
-				<textarea class="form-control" name="contact_message" id="contact_message" placeholder="Your message here"></textarea>
+				<textarea class="form-control" class="contact_form" name="contact_message" id="contact_message" placeholder="Your message here"></textarea>
 			</div>
 			<button type="submit" class="btn btn-default" id="submitContactForm">Submit</button>
 		</form>
@@ -237,26 +236,42 @@
 		  $("#submitContactForm").click(function(e) {
 		      e.preventDefault();
 		
-		    // See Teez answer, I wasn't aware of this.
 		    var dataToSend = $("#contactForm").serializeArray();
-		
 		    $.ajax({                
 		        url: "contact.php", 
 		        type: "POST",
 		        data: dataToSend,     
 		        cache: false,
 		        success: function(){
-		        $("div").removeData();
-		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>");
+		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>").fadeOut(7000);
+		         document.getElementById('contactForm').reset();
 		        },
 		        error: function(){
 		        	alert("An Error occured while trying to send the message, Sorry !");
 		        }
-		        
 		    });
 		    return false;
 		  });
+		  
+		  $('#submitContactForm').bind('mouseover',function(){
+		  	var colour  = $(this).css("background-color");
+		  	var text_colour = $(this).css('color');
+		  	$(this).css('background', 'grey');
+		  	$(this).css('color', 'red');
+		  	$(this).bind('mouseout', function(){
+		  		$(this).css('background', colour);
+		  		$(this).css('color', text_colour);
+		  	});
+		  });
 		});
+		
+		// $(document).ready(function(){
+		// 	$('#submitContactForm').click(function(){
+		// 		$('#contact_email').removeData("#contact_email");
+		// 		$('#contact_name').removeData("#contact_name");
+		// 		$('#contact_message').removeData("#contact_message");
+		// 	});	
+		// });
 
 	 </script>
 	<!-- 	<script type="text/javascript">
