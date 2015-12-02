@@ -195,6 +195,8 @@
 	// 	});
 	// });
 	
+	//SECOND ATTEMPT SLIGHTLY DIFFERENT
+	
 	// $(document).ready(function(){
 	// 	$('#submitContactForm').click(function(){
 	// 		$.post("contact.php",
@@ -206,7 +208,8 @@
 	// });
 	
 	
-	//SECOND ATTEMPT SLIGHTLY DIFFERENT
+	
+	//THIRD ATTEMPT SLIGHTLY DIFFERENT
 	
 	/*global dataString*/
 // 	$(function() {
@@ -227,6 +230,26 @@
 //         return false;
 //     });
 // });
+		$(document).ready(function() {
+		  $("#submitContactForm").click(function(e) {
+		  	$("#contactForm").removeData();
+		      e.preventDefault();
+		
+		    // See Teez answer, I wasn't aware of this.
+		    var dataToSend = $("#contactForm").serializeArray();
+		
+		    $.ajax({                
+		        url: "contact.php", 
+		        type: "POST",
+		        data: dataToSend,     
+		        cache: false,
+		        success: function()
+		        {
+		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>");
+		        }    
+		    });
+		  });
+		});
 	
 
 
