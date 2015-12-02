@@ -25,21 +25,27 @@
 }
 
 
-/*#menu{*/
-    /* background-image: url("../img/menuIMG.png"); */ 
+#menu{ 
 /*    text-align: center;*/
 /*    font-size: 17px;*/
 /*    margin-bottom:30px;*/
 /*    border: 1px solid black; */
 /*    height: auto;*/
-/*    color: white;*/
+    color: white;
 /*    font-family:'Times New Roman', serif;*/
 /*    margin-top: 50px;*/
 /*    padding: 0;*/
 /*    width: 70%;*/
 /*    background-color: orange;*/
+  padding-right: 15%;
+  padding-left: 15%;
     
-/*}*/
+ } 
+.menuContainer {
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/education6.png"); 
+}
 
 /*#menuHeader{*/
 /*    min-height: 370px;*/
@@ -78,7 +84,7 @@
 
 #submit{
     color: white;
-    background-color: #49769D;
+    background-image: url("../img/blur2.png"); 
     font-weight: bold;
     border-radius: 10px;
     width: auto;
@@ -170,7 +176,7 @@
     } */
 /*}*/
 
-/* For Scroll */
+/* For Scroll 
 .post{
 	margin-bottom: 80px;
 	text-align: center;
@@ -238,3 +244,5 @@
 		transform: translateY(0);
 	}
 }
+
+*/

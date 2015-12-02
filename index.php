@@ -59,7 +59,7 @@
 			</div>
 		</section>
 			<section id="content2">
-				<div class="container padding" id="menu">
+				<div class="menuContainer padding" id="menu">
 					
 					<!-- Good example https://isl.co/contact/ -->
 					
@@ -114,18 +114,19 @@
 			<div class="form-group">
 				<h2>Contact Form</h2>
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
+				<input type="email" class="form-control" id="contact_email" name="email" placeholder="example@example.com"/>
 			</div>
 			<div class="form-group">
 				<label for="name">Name:</label>
-				<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
+				<input type="text" class="form-control" id="contact_name" name="name" placeholder="Your name here"/>
 			</div>
 			<div class="form-group">
 				<label for="message">Message:</label>
-				<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+				<textarea class="form-control" name="message" id="contact_message" placeholder="Your message here"></textarea>
 			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
+			<button type="submit" class="btn btn-default" id="submitContactForm">Submit</button>
 		</form>
+		<p id="formMessage"></p>
 	</div>	
 	</section>
 
@@ -164,16 +165,77 @@
 	    }
 	  });
 	});
-
-	</script>
+	//TRIED THIS WAY FIRST
 	
-	<!-- <script type="text/javascript">
-		jQuery(document).ready(function() {
-			jQuery('#collegeList').addClass("hidden").viewportChecker({
+	/*global formdata*/ /*global serverSideErrorMessage*/
+	// $(function ajaxContactForm(form){
+	// 		$.ajax({
+	// 		type: "POST", 
+	// 		url: "contact.php",
+	// 		cache: false,
+	// 		data:  form, 
+	// 		dataType:'json', 
+	// 		success: function(data){
+	// 			if (data.success == true) {
+	// 				// form message success
+	// 				$('#formMessage').html('Success');
+	// 				$('#contactForm').reset();
+	// 			} 
+	// 			else {
+	// 				// form processing failed
+	// 				serverSideErrorMessage(data.errorMessage);
+	// 			}
+	// 			return false;
+	// 		}, 
+	// 		error: function(data){
+	// 			alert('A problem occurred sending the message! Sorry!!');
+	// 		}
+	// 	});
+	// });
+	
+	// $(document).ready(function(){
+	// 	$('#submitContactForm').click(function(){
+	// 		$.post("contact.php",
+	// 		{name:$('#name').val(), email:$('#email').val(), message:$('#message').val()},
+	// 		function(data){
+	// 			$('#formMessage').html(data);
+	// 		});
+	// 	});
+	// });
+	
+	
+	//SECOND ATTEMPT SLIGHTLY DIFFERENT
+	
+	/*global dataString*/
+// 	$(function() {
+//     $("#submitContactForm").click(function() {
+//         var name = $("#contact_name").val();
+//         var email = $("#contact_email").val();
+//         var text = $("#contact_message").val();
+
+//         $.ajax({
+//             type: "POST",
+//             url: "contact.php",
+//             data: dataString,
+//             success: function(){
+//             $('.success').fadeIn(1000);
+//             }
+//         });
+
+//         return false;
+//     });
+// });
+	
+
+
+	 </script>
+	<!-- 	<script type="text/javascript">
+		(document).ready(function() {
+			('.scroll').addClass("hidden").viewportChecker({
 			  classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
 			 offset: 100    
 			 });   
 		});            
-</script> -->
+</script> --> 
 	</body>
 </html>

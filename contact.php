@@ -1,8 +1,9 @@
 <?php
 $to = "evanm900@gmail.com";
-$name = Trim(stripslashes($_POST['name']));
-$email = Trim(stripslashes($_POST['email']));
-$message = Trim(stripslashes($_POST['message']));
+$name = Trim(stripslashes($_POST['contact_name']));
+$email = Trim(stripslashes($_POST['contact_email']));
+$message = Trim(stripslashes($_POST['contact_message']));
+$from = $_POST['email'];
 $body ="";
 $body .="Name: ";
 $body .=$name;
@@ -13,11 +14,11 @@ $body .="\n";
 $body .="Message: ";
 $body .=$message;
 $body .="\n";
-$go = mail($to, $subject, $body, "From:<$email>");
+$go = mail($to, $subject, $body, $from);
 if($go){
-	print("Success!");
+	echo("Success!");
 }
 else{
-	print("Unable to send!!");
+	echo("Unable to send!!");
 }
 ?>

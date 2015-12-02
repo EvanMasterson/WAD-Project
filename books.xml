@@ -7,6 +7,7 @@
         <postcode>Dublin 2, </postcode>
         <type>University, </type>
         <phone>(01) 896 1000</phone>
+        <marker/>
     </college>
     <college>
         <name>University College Cork, </name>
@@ -14,6 +15,7 @@
         <postcode>Co. Cork, </postcode>
         <type>University, </type>
         <phone>(021) 490 3000</phone>
+        <marker/>
     </college>
     <college>
         <name>NUI Galway, </name>
@@ -21,6 +23,7 @@
         <postcode>Galway, </postcode>
         <type>University, </type>
         <phone>(091) 524 411</phone>
+        <marker/>
     </college>
     <college>
         <name>University of Dublin, </name>
@@ -28,6 +31,7 @@
         <postcode>Dublin 4, </postcode>
         <type>University, </type>
         <phone>(01) 716 7777</phone>
+        <marker/>
     </college>
     <college>
         <name>University of Limerick, </name>
@@ -35,6 +39,7 @@
         <postcode>Co. Limerick, </postcode>
         <type>University, </type>
         <phone>(061) 202 700</phone>
+        <marker/>
     </college>
     <college>
         <name>Dublin City University, </name>
@@ -42,6 +47,7 @@
         <postcode>Dublin 9, </postcode>
         <type>University, </type>
         <phone>(01) 700 5000</phone>
+        <marker/>
     </college>
     <college>
         <name>National College of Ireland, </name>
@@ -49,6 +55,7 @@
         <postcode>Dublin 1, </postcode>
         <type>College, </type>
         <phone>(01) 449 8500</phone>
+        <marker/>
     </college>
     <college>
         <name>Dublin Institute of Technology, </name>
@@ -56,6 +63,7 @@
         <postcode>Dublin 2, </postcode>
         <type>Institute of Technology, </type>
         <phone>(01) 402 3000</phone>
+        <marker/>
     </college>
     <college>
         <name>Maynooth University, </name>
@@ -63,6 +71,7 @@
         <postcode>Co. Kildare, </postcode>
         <type>University, </type>
         <phone>(01) 708 6000</phone>
+        <marker/>
     </college>
     <college>
         <name>Cork Intitute of Technology, </name>
@@ -70,6 +79,7 @@
         <postcode>Co. Cork, </postcode>
         <type>Intitute of Technology, </type>
         <phone>(021) 432 6100</phone>
+        <marker/>
     </college>
     <college>
         <name>Limerick Institute of Technology, </name>
@@ -77,6 +87,7 @@
         <postcode>Limerick, </postcode>
         <type>Institute of Technology, </type>
         <phone>(061) 208285</phone>
+        <marker/>
     </college>
     <college>
         <name>Institute of Technology Tallaght, </name>
@@ -84,6 +95,7 @@
         <postcode>Dublin 24, </postcode>
         <type>Institute of Technology, </type>
         <phone>(01) 404 2000</phone>
+        <marker/>
     </college>
     <college>
         <name>Waterford Institute of Technology, </name>
@@ -91,6 +103,7 @@
         <postcode>Waterford, </postcode>
         <type>Institute of Technology, </type>
         <phone>(051) 302 000</phone>
+        <marker/>
     </college>
     <college>
         <name>Galway-Mayo Institute of Technology, </name>
@@ -98,6 +111,7 @@
         <postcode>Galway, </postcode>
         <type>Institute of Technology, </type>
         <phone>(091) 753 161</phone>
+        <marker/>
     </college>
     <college>
         <name>Dundalk Institute of Technology, </name>
@@ -105,6 +119,7 @@
         <postcode>Co. Louth, </postcode>
         <type>Institute of Technology, </type>
         <phone>(042) 937 0200</phone>
+        <marker/>
     </college>
     <college>
         <name>Institute of Technology, Sligo, </name>
@@ -112,6 +127,7 @@
         <postcode>Sligo, </postcode>
         <type>Institute of Technology, </type>
         <phone>(071) 915 5222</phone>
+        <marker/>
     </college>
     <college>
         <name>Institute of Technology, Blanchardstown, </name>
@@ -119,6 +135,7 @@
         <postcode>Dublin 15, </postcode>
         <type>Institute of Technology, </type>
         <phone>(01) 885 1000</phone>
+        <marker/>
     </college>
     <college>
         <name>Dun Laoghaire Institute of Art, Design and Technology, </name>
@@ -126,6 +143,7 @@
         <postcode>Dublin, </postcode>
         <type>College, </type>
         <phone>(01) 239 4000</phone>
+        <marker/>
     </college>
     <college>
         <name>Athlone Institute of Technology, </name>
@@ -133,6 +151,7 @@
         <postcode>Co. Westmeath, </postcode>
         <type>Institute of Technology, </type>
         <phone>(090) 646 8000</phone>
+        <marker/>
     </college>
     <college>
         <name>Royal College of Surgeons in Ireland, </name>
@@ -140,6 +159,7 @@
         <postcode>Dublin 2, </postcode>
         <type>College, </type>
         <phone>(01) 402 2100</phone>
+        <marker/>
     </college>
     <college>
         <name>Dublin Business School, </name>
@@ -147,6 +167,7 @@
         <postcode>Dublin, </postcode>
         <type>College, </type>
         <phone>(01) 417 7500</phone>
+        <marker/>
     </college>
     <college>
         <name>Institute of Technology, Carlow, </name>
@@ -154,6 +175,7 @@
         <postcode>Carlow, </postcode>
         <type>Institute of Technology, </type>
         <phone>(059) 917 5000</phone>
+        <marker/>
     </college>
     <college>
         <name>Institute of Technology, Tralee, </name>
@@ -161,6 +183,7 @@
         <postcode>Co. Kerry, </postcode>
         <type>Institute of Technology, </type>
         <phone>(066) 714 5600</phone>
+        <marker/>
     </college>
     <college>
         <name>Letterkenny Institute of Technology, </name>
@@ -168,6 +191,7 @@
         <postcode>Co. Donegal, </postcode>
         <type>Institute of Technology, </type>
         <phone>(074) 918 6000</phone>
+        <marker/>
     </college>
     <college>
         <name>IBAT College Dublin, </name>
@@ -175,6 +199,7 @@
         <postcode>Dublin 2, </postcode>
         <type>College, </type>
         <phone>(01) 807 5055</phone>
+        <marker/>
     </college>
     <college>
         <name>Griffith College Dublin, </name>
@@ -182,5 +207,6 @@
         <postcode>Dublin 8, </postcode>
         <type>College, </type>
         <phone>(01) 415 0400</phone>
+        <marker/>
     </college>
-</institutes>
+<college><name>hi</name><address>bye</address><postcode>no</postcode><type>yes</type><phone>087</phone></college></institutes>

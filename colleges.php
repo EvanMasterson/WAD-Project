@@ -4,11 +4,12 @@
      * Loading a XML from a file, adding new elements and editing elements
      */
      
-$cName = $_POST["name"];
+$cName = $_POST["cName"];
 $address = $_POST["address"];
 $postcode = $_POST["postcode"];
 $type = $_POST["type"];
-$pNumber = $_POST["phone"];
+$pNumber = $_POST["pNumber"];
+$stringDesc = $cNAme +", "+$address;
     
 if(file_exists('colleges.xml')) {
     // loads XML and returns SimpleXML
@@ -46,11 +47,9 @@ if(file_exists('colleges.xml')) {
         // load XML in simple XML form
         $rssxml = simplexml_load_file('rss.xml');
         $newChild = $rssxml->channel->addChild('item');
-        $newChild->addChild('title', $cName);
-        $newChild->addChild('link', $address);
-        $newChild->addChild('link', $postcode);
-        $newChild->addChild('guid', $type);
-        $newChild->addChild('description', $pNumber);
+        $newChild->addChild('title', "New College added!");
+        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io");
+        $newChild->addChild('description', $stringDesc);
         file_put_contents('rss.xml', $rssxml->asXML());
         
         }
