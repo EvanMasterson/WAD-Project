@@ -19,6 +19,7 @@
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/mapMarkers.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 		<!-- Scroll Animation 
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
 		<script src="js/viewportchecker.js"></script> -->
@@ -136,10 +137,10 @@
 			<div class="container padding">
 				<div class="row">
 				<footer class="text-center" id="FAFFooter">Find-a-Future<br/>
-							<div class="col-md-3"><a href="#home" id="homeStyle" >Back to Top</a><br /></div>
-							<div class="col-md-3"><a href="#locator" id="locationStyle" >Locator</a><br/></div>
-							<div class="col-md-3"><a href="#collegeList" id="cListStyle" >College List</a><br/></div>
-							<div class="col-md-3"><a href="#contact" id="contactStyle" >Contact</a></div>
+						<div class="col-md-3"><a href="#home" id="homeStyle" >Back to Top</a></div>
+						<div class="col-md-3"><a href="#locator" id="locationStyle" >Locator</a></div>
+						<div class="col-md-3"><a href="#collegeList" id="cListStyle" >College List</a></div>
+						<div class="col-md-3"><a href="#contact" id="contactStyle" >Contact</a></div>
 				</footer>
 				</div>
 			</div>
@@ -230,9 +231,10 @@
 //         return false;
 //     });
 // });
+
+		//WORKING AJAX !!!
 		$(document).ready(function() {
 		  $("#submitContactForm").click(function(e) {
-		  	$("#contactForm").removeData();
 		      e.preventDefault();
 		
 		    // See Teez answer, I wasn't aware of this.
@@ -243,15 +245,18 @@
 		        type: "POST",
 		        data: dataToSend,     
 		        cache: false,
-		        success: function()
-		        {
+		        success: function(){
+		        $("div").removeData();
 		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>");
-		        }    
+		        },
+		        error: function(){
+		        	alert("An Error occured while trying to send the message, Sorry !");
+		        }
+		        
 		    });
+		    return false;
 		  });
 		});
-	
-
 
 	 </script>
 	<!-- 	<script type="text/javascript">

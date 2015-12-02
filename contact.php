@@ -4,9 +4,10 @@
      * Loading a XML from a file, adding new elements and editing elements
      */
      
-$contact_name = $_POST["contact_name"];
-$contact_email = $_POST["contact_email"];
-$contact_message = $_POST["contact_message"];
+$contact_email = Trim(stripslashes($_POST["contact_email"]));
+$contact_name = Trim(stripslashes($_POST["contact_name"]));
+$contact_message = Trim(stripslashes($_POST["contact_message"]));
+
     
 if(file_exists('contact.xml')) {
     // loads XML and returns SimpleXML
@@ -21,8 +22,8 @@ if(file_exists('contact.xml')) {
     
     //adding new child to XML
     $newChild = $xml->addChild('details');
-    $newChild -> addChild('name', $contact_name);
     $newChild -> addChild('email', $contact_email);
+    $newChild -> addChild('name', $contact_name);
     $newChild -> addChild('message', $contact_message);
     
     //transfering the object in XML format
