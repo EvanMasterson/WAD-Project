@@ -114,15 +114,15 @@
 			<div class="form-group">
 				<h2>Contact Form</h2>
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" id="contact_email" name="email" placeholder="example@example.com"/>
+				<input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="example@example.com"/>
 			</div>
 			<div class="form-group">
 				<label for="name">Name:</label>
-				<input type="text" class="form-control" id="contact_name" name="name" placeholder="Your name here"/>
+				<input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="Your name here"/>
 			</div>
 			<div class="form-group">
 				<label for="message">Message:</label>
-				<textarea class="form-control" name="message" id="contact_message" placeholder="Your message here"></textarea>
+				<textarea class="form-control" name="contact_message" id="contact_message" placeholder="Your message here"></textarea>
 			</div>
 			<button type="submit" class="btn btn-default" id="submitContactForm">Submit</button>
 		</form>

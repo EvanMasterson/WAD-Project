@@ -1,24 +1,39 @@
 <?php
-$to = "evanm900@gmail.com";
-$name = Trim(stripslashes($_POST['contact_name']));
-$email = Trim(stripslashes($_POST['contact_email']));
-$message = Trim(stripslashes($_POST['contact_message']));
-$from = $_POST['email'];
-$body ="";
-$body .="Name: ";
-$body .=$name;
-$body .="\n";
-$body .="Email: ";
-$body .=$email;
-$body .="\n";
-$body .="Message: ";
-$body .=$message;
-$body .="\n";
-$go = mail($to, $subject, $body, $from);
-if($go){
-	echo("Success!");
+    /*
+     * PHP SimpleXML
+     * Loading a XML from a file, adding new elements and editing elements
+     */
+     
+$contact_name = $_POST["contact_name"];
+$contact_email = $_POST["contact_email"];
+$contact_message = $_POST["contact_message"];
+    
+if(file_exists('contact.xml')) {
+    // loads XML and returns SimpleXML
+    $xml = simplexml_load_file('contact.xml');
+    
+    //transforming the file in xml format
+    $xmlFormat = $xml->asXML();
+    //display element in proper format
+    echo '<u><b>This is the xml code from contact.xml:</b></u>
+    <br /><br />
+    <pre>' . htmlentities($xmlFormat, ENT_COMPAT | ENT_HTML401, "ISO-8859-1") . '</pre><br /><br />';
+    
+    //adding new child to XML
+    $newChild = $xml->addChild('details');
+    $newChild -> addChild('name', $contact_name);
+    $newChild -> addChild('email', $contact_email);
+    $newChild -> addChild('message', $contact_message);
+    
+    //transfering the object in XML format
+    $xmlFormat = $xml->asXML();
+    //display the element in proper format
+    echo '<u><b>This is the xml code from contact.xml with new elements added:</b></u>
+    <br /><br />
+    <pre>' . htmlentities($xmlFormat, ENT_COMPAT | ENT_HTML401, "ISO-8859-1") . '</pre>';
+} else{
+    exit('Failed to open contact.xml');
 }
-else{
-	echo("Unable to send!!");
-}
+    file_put_contents('contact.xml', $xml ->asXML() );
+   
 ?>
