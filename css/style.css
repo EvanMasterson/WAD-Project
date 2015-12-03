@@ -6,7 +6,9 @@
 
 #rss{
     color:purple;
-    margin-top: 50px
+    margin-top: 50px;
+    margin-bottom:50px;
+    text-align:center;
 }
 
 #contact h2{
@@ -17,7 +19,12 @@
 
 #contact{
       color: black;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;  
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;
+    
+}
+#contactForm{
+    margin-top:50px;
+    margin-bottom:50px;
 }
 #collegeInfo {
     color: #3190B0;
@@ -43,9 +50,10 @@
     
  } 
 .menuContainer {
-  margin-right: auto;
-  margin-left: auto;
+  /*margin-right: auto;*/
+  margin: auto;
   background-image: url("../img/education.png"); 
+  height:100%;
 }
 
 .IMGContainer {
@@ -53,7 +61,21 @@
   margin-left: auto;
 }
 
-
+@media (min-width: 768px) {
+  .IMGcontainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .IMGcontainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .IMGcontainer {
+    width: 1170px;
+  }
+}
 
 /*#menuHeader{*/
 /*    min-height: 370px;*/
@@ -102,6 +124,7 @@
 #map{
     color:orange;
     min-height:600px;
+    width:auto;
     /*margin-top:100px;*/
     /*margin-bottom:50px;*/
     margin:4%;    /*
@@ -171,6 +194,12 @@
     font-size: 25px;
     margin-bottom:6%;
     margin-top:3%;
+}
+
+#collegeForm{
+    margin-bottom:100px;
+    position:relative;
+    top:50px;
 }
 
 /*@media screen and(max-width:480px){*/

@@ -21,7 +21,7 @@
 
 	<xsl:template match="item">
 	    
-		<ul><li><xsl:value-of select="."/></li></ul><br/>
+		<xsl:value-of select="."/><br/>
 		
 	</xsl:template>
 </xsl:stylesheet>

@@ -97,7 +97,7 @@
 			</div>
 			</section>
 			<section id="content3">
-			<div class="container" id="rss">
+			<div class="container padding" id="rss">
 				<?php include ("rssTransform.php");?>
 			</div>
 			</section>
@@ -241,7 +241,7 @@
 //     });
 // });
 
-		//WORKING AJAX !!!
+		//AJAX for Contact Form
 		$(document).ready(function() {
 		  $("#submitContactForm").click(function(e) {
 		      e.preventDefault();
@@ -263,6 +263,7 @@
 		    return false;
 		  });
 		  
+		  //jQuery for contact form submit button
 		  $('#submitContactForm').bind('mouseover',function(){
 		  	var colour  = $(this).css("background-color");
 		  	var text_colour = $(this).css('color');
@@ -275,6 +276,7 @@
 		  });
 		});
 		
+		//AJAX for Add College Form
 		$(document).ready(function() {
 		  $("#submitCollege").click(function(e) {
 		      e.preventDefault();
@@ -289,17 +291,18 @@
 		    return false;
 		  });
 		  
-		  $('#submitContactForm').bind('mouseover',function(){
-		  	var colour  = $(this).css("background-color");
-		  	var text_colour = $(this).css('color');
-		  	$(this).css('background', 'grey');
-		  	$(this).css('color', 'red');
-		  	$(this).bind('mouseout', function(){
-		  		$(this).css('background', colour);
-		  		$(this).css('color', text_colour);
-		  	});
-		  });
+		  //$('#submitCollege').bind('mouseover',function(){
+		  //	var colour  = $(this).css("background-color");
+		  //	var text_colour = $(this).css('color');
+		  //	$(this).css('background', 'grey');
+		  //	$(this).css('color', 'red');
+		  //	$(this).bind('mouseout', function(){
+		  //		$(this).css('background', colour);
+		  //		$(this).css('color', text_colour);
+		  //	});
+		  //});
 		});
+		
 		// $(document).ready(function(){
 		// 	$('#submitContactForm').click(function(){
 		// 		$('#contact_email').removeData("#contact_email");

@@ -48,8 +48,8 @@ if(file_exists('colleges.xml')) {
         // load XML in simple XML form
         $rssxml = simplexml_load_file('rss.xml');
         $newChild = $rssxml->channel->addChild('item');
-        $newChild->addChild('title', "New College added!");
-        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io");
+        $newChild->addChild('title', "New College added! ");
+        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io ");
         $newChild->addChild('description', $stringDesc);
         file_put_contents('rss.xml', $rssxml->asXML());
         
