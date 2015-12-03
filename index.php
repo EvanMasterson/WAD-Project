@@ -62,12 +62,6 @@
 		</section>
 			<section id="content2">
 				<div class="menuContainer padding" id="menu">
-					
-					
-					
-					<!--<div class="row" id="menu">-->
-					<!--<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>-->
-						<!--<div class="col-md-9" id="inputs">-->
 							<form role="form" action="colleges.php" method="post" id="collegeForm">
 								<div class="form-group">
 									<h1>Add a College Here!</h1>
@@ -76,11 +70,11 @@
 								</div>
 								<div class="form-group">
 									<label for="address">Address:</label>
-									<input type="text" class="form-control" name="address" placeholder="Your Address here"/>
+									<input type="text" class="form-control" name="address" placeholder="College Address here"/>
 								</div>
 								<div class="form-group">
 									<label for="postcode">Postcode: </label>
-									<input type="text" class="form-control" name="postcode" placeholder="Your Postcode here"/>
+									<input type="text" class="form-control" name="postcode" placeholder="College Postcode here"/>
 								</div>
 								<div class="form-group">
 									<label for="type">Type: </label>
@@ -88,12 +82,10 @@
 								</div>
 								<div class="form-group">
 									<label for="phoneNumber">Phone Number: </label>
-									<input type="text" class="form-control" name="pNumber" placeholder="Your Phone number here"/>
+									<input type="text" class="form-control" name="pNumber" placeholder="College Phone number here"/>
 								</div>
 								<button type="submit" class="btn btn-default" id="submitCollege">Add College!</button>
 							</form>
-						<!--</div>-->
-					<!--</div>-->
 			</div>
 			</section>
 			<section id="content3">
@@ -178,70 +170,7 @@
 	    }
 	  });
 	});
-	//TRIED THIS WAY FIRST
 	
-	/*global formdata*/ /*global serverSideErrorMessage*/
-	// $(function ajaxContactForm(form){
-	// 		$.ajax({
-	// 		type: "POST", 
-	// 		url: "contact.php",
-	// 		cache: false,
-	// 		data:  form, 
-	// 		dataType:'json', 
-	// 		success: function(data){
-	// 			if (data.success == true) {
-	// 				// form message success
-	// 				$('#formMessage').html('Success');
-	// 				$('#contactForm').reset();
-	// 			} 
-	// 			else {
-	// 				// form processing failed
-	// 				serverSideErrorMessage(data.errorMessage);
-	// 			}
-	// 			return false;
-	// 		}, 
-	// 		error: function(data){
-	// 			alert('A problem occurred sending the message! Sorry!!');
-	// 		}
-	// 	});
-	// });
-	
-	//SECOND ATTEMPT SLIGHTLY DIFFERENT
-	
-	// $(document).ready(function(){
-	// 	$('#submitContactForm').click(function(){
-	// 		$.post("contact.php",
-	// 		{name:$('#name').val(), email:$('#email').val(), message:$('#message').val()},
-	// 		function(data){
-	// 			$('#formMessage').html(data);
-	// 		});
-	// 	});
-	// });
-	
-	
-	
-	//THIRD ATTEMPT SLIGHTLY DIFFERENT
-	
-	/*global dataString*/
-// 	$(function() {
-//     $("#submitContactForm").click(function() {
-//         var name = $("#contact_name").val();
-//         var email = $("#contact_email").val();
-//         var text = $("#contact_message").val();
-
-//         $.ajax({
-//             type: "POST",
-//             url: "contact.php",
-//             data: dataString,
-//             success: function(){
-//             $('.success').fadeIn(1000);
-//             }
-//         });
-
-//         return false;
-//     });
-// });
-
 		//AJAX for Contact Form
 		$(document).ready(function() {
 		  $("#submitContactForm").click(function(e) {
@@ -291,17 +220,6 @@
 		    });
 		    return false;
 		  });
-		  
-		  //$('#submitCollege').bind('mouseover',function(){
-		  //	var colour  = $(this).css("background-color");
-		  //	var text_colour = $(this).css('color');
-		  //	$(this).css('background', 'grey');
-		  //	$(this).css('color', 'red');
-		  //	$(this).bind('mouseout', function(){
-		  //		$(this).css('background', colour);
-		  //		$(this).css('color', text_colour);
-		  //	});
-		  //});
 		});
 		
 		$(document).ready(function(){
@@ -311,22 +229,7 @@
 			});
 		});
 		
-		// $(document).ready(function(){
-		// 	$('#submitContactForm').click(function(){
-		// 		$('#contact_email').removeData("#contact_email");
-		// 		$('#contact_name').removeData("#contact_name");
-		// 		$('#contact_message').removeData("#contact_message");
-		// 	});	
-		// });
 
 	 </script>
-	<!-- 	<script type="text/javascript">
-		(document).ready(function() {
-			('.scroll').addClass("hidden").viewportChecker({
-			  classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-			 offset: 100    
-			 });   
-		});            
-</script> --> 
 	</body>
 </html>

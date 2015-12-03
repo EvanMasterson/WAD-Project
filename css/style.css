@@ -33,17 +33,6 @@
 
 
 #menu{ 
-/*    text-align: center;*/
-/*    font-size: 17px;*/
-/*    margin-bottom:30px;*/
-/*    border: 1px solid black; */
-/*    height: auto;*/
-    color: white;
-/*    font-family:'Times New Roman', serif;*/
-/*    margin-top: 50px;*/
-/*    padding: 0;*/
-/*    width: 70%;*/
-/*    background-color: orange;*/
   padding-right: 15%;
   padding-left: 15%;
   margin-top:100px;
@@ -78,41 +67,6 @@
   }
 }
 
-/*#menuHeader{*/
-/*    min-height: 370px;*/
-/*    width: 30%;*/
-/*    background-image: url("../img/menuIMG.png");*/
-/*    color: white;*/
-/*    float: left;*/
-/*    position: relative;*/
-/*    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;*/
-   
-/*}*/
-
-/* #inputs{*/
-/*    height: auto;*/
-/*    width:60%;*/
-/*    left:60px;*/
-/*    position: relative;*/
-/*    float: left;*/
-/*    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;*/
-/*    background-color: #43567F;*/
-/*    text-shadow: 1px 1px 2px black; */
-    
-/*}*/
-
-/*#inputs input {*/
-/*        width: auto;*/
-/*        clear: both;*/
-/*        float: right;*/
-/*         top: 60px; */
-/*        right: 5%;*/
-/*        position: relative;*/
-/*        font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;*/
-/*    }*/
-
-
-
 #submitCollege{
     color: white;
     background-image: url("../img/blur2.png"); 
@@ -136,20 +90,13 @@
     border-radius: 5px;
     box-shadow: 10px 10px 5px #888888;
 }
-/* #img2{
-    margin-top: 50px;
-} */
+
 
 #homeStyle{
     color:#3190B0;
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    /*float: left;*/
-    /*left: 20%;*/
-    /*position: absolute;*/
-    /*z-index: 6;*/
-    /*top: 50%;*/
 }
 
 #locationStyle{
@@ -157,11 +104,6 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    /*float: left;*/
-    /*left: 38%;*/
-    /*position: absolute;*/
-    /*z-index: 6;*/
-    /*top: 50%;*/
 }
 
 #cListStyle{
@@ -169,11 +111,6 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    /*float: right;*/
-    /*right: 38%;*/
-    /*position: absolute;*/
-    /*z-index: 6;*/
-    /*top: 50%;*/
 }
 
 #contactStyle{
@@ -181,11 +118,6 @@
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
-    /*float: right;*/
-    /*right:20%;*/
-    /*position: absolute;*/
-    /*z-index: 6;*/
-    /*top: 50%;*/
 }
 
 #FAFFooter{
