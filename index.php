@@ -98,7 +98,8 @@
 			</section>
 			<section id="content3">
 			<div class="container padding" id="rss">
-				<?php include ("rssTransform.php");?>
+				<h2>RSS Feed</h2>
+				<div id="rssLoad"><?php include ("rssTransform.php");?></div>
 			</div>
 			</section>
 	</div>
@@ -301,6 +302,13 @@
 		  //		$(this).css('color', text_colour);
 		  //	});
 		  //});
+		});
+		
+		$(document).ready(function(){
+			$('#rssLoad').hide();
+			$('#submitCollege').click(function(){
+				$('#rssLoad').fadeIn(4000);
+			});
 		});
 		
 		// $(document).ready(function(){

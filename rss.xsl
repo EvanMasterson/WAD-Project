@@ -12,8 +12,6 @@
 				<title>RSS Feed</title>
 			</head>
 			<body>
-				<link rel="stylesheet" href="css/style.css" />
-				<h2 id="rss">RSS Feed</h2>
 				<xsl:apply-templates select="//item[last()]"/>
 			</body>
 		</html>
