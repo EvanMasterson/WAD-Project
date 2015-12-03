@@ -9,7 +9,7 @@ $address = $_POST["address"];
 $postcode = $_POST["postcode"];
 $type = $_POST["type"];
 $pNumber = $_POST["pNumber"];
-$stringDesc = $cNAme +", "+$address;
+$stringDesc = " ".$cName.", ".$address;
     
 if(file_exists('colleges.xml')) {
     // loads XML and returns SimpleXML
@@ -44,6 +44,7 @@ if(file_exists('colleges.xml')) {
     writeRSS();
     function writeRSS(){
         if(file_exists('rss.xml')){
+        
         // load XML in simple XML form
         $rssxml = simplexml_load_file('rss.xml');
         $newChild = $rssxml->channel->addChild('item');

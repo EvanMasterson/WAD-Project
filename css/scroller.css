@@ -84,34 +84,47 @@ width: auto;
 @media screen and (min-width:480px){
 #img1 {
 	background-image: url("../img/NCI.png");
+	/* height: auto;
+	width: auto; */
 }
 
 #img2 {
 	background-image: url("../img/DCU.png");
+	/* height: auto;
+	width: auto; */
 }
 
 #img3{
 	background-image: url("../img/TCD.png");
+	/* height: auto;
+	width: auto; */
 }
 }
 
 @media screen and (min-width:0px) and (max-width:480px){
 	
-#img1 {
+#img1MOB {
 	background-image: url("../img/NCI_MOB.png");
-	/* background-size: auto; */
+	/*background-size: auto; 
+	height: auto;
+	width: auto;*/
 	
 }
 
-#img2 {
+#img2MOB {
 	background-image: url("../img/DCU_MOB.png");
-	/*background-size: auto;*/
+	/*background-size: auto;
+	height: auto;
+	width: auto;*/
 }
 
-#img3{
+#img3MOB{
 	background-image: url("../img/TCD_MOB.png");
-	/*background-size: auto;*/
+	/*background-size: auto;
+	height: auto;
+	width: auto;*/
 }
 }
+
 
 

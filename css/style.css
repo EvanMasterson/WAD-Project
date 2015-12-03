@@ -6,7 +6,7 @@
 
 #rss{
     color:purple;
-    margin-top: 450px
+    margin-top: 50px
 }
 
 #contact h2{
@@ -39,13 +39,21 @@
 /*    background-color: orange;*/
   padding-right: 15%;
   padding-left: 15%;
+  margin-top:100px;
     
  } 
 .menuContainer {
   margin-right: auto;
   margin-left: auto;
-  background-image: url("../img/education6.png"); 
+  background-image: url("../img/education.png"); 
 }
+
+.IMGContainer {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 
 /*#menuHeader{*/
 /*    min-height: 370px;*/
@@ -82,7 +90,7 @@
 
 
 
-#submit{
+#submitCollege{
     color: white;
     background-image: url("../img/blur2.png"); 
     font-weight: bold;
@@ -94,9 +102,9 @@
 #map{
     color:orange;
     min-height:600px;
-    margin-top:100px;
-    margin-bottom:50px;
-    /*
+    /*margin-top:100px;*/
+    /*margin-bottom:50px;*/
+    margin:4%;    /*
     For shadow behind map */
     background-color:#CCC;
     position:relative;
@@ -178,67 +186,4 @@
     } */
 /*}*/
 
-/* For Scroll */
 
-.hidden{
-	opacity: 0;
-}
-
-.visible{
-	opacity: 1;
-}
-
-.animated.fadeInDown {
-	-webkit-animation-name: fadeInDown;
-	-moz-animation-name: fadeInDown;
-	-o-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-}
-
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-	}
-}
-
-@-moz-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-moz-transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-moz-transform: translateY(0);
-	}
-}
-
-@-o-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-o-transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		-o-transform: translateY(0);
-	}
-}
-
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		transform: translateY(-20px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}

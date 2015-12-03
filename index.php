@@ -19,9 +19,6 @@
   		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/mapMarkers.js"></script>
-		<!-- Scroll Animation 
-		<link rel="stylesheet" type="text/css" href="css/animate.css" />
-		<script src="js/viewportchecker.js"></script> -->
 	
 		
 	</head>
@@ -52,21 +49,26 @@
 
 
 	</nav>
-	<section id="img1"></section>
+	
+	<section id="img1">
+		<div class="container padding" id="img1MOB">
+			
+		</div>
+	</section> 
 	<div id="locator">
 	<section id="content1">
-		<div  class="container" id="map" onload="mapMarkers()">
-			</div>
+		<div class="container" id="map" onload="mapMarkers()">
+		</div>
 		</section>
 			<section id="content2">
 				<div class="menuContainer padding" id="menu">
 					
-					<!-- Good example https://isl.co/contact/ -->
+					
 					
 					<!--<div class="row" id="menu">-->
 					<!--<div id="menuHeader" class="col-md-3"><h1 style= font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif ;> Add a College Here!</h1> </div>-->
 						<!--<div class="col-md-9" id="inputs">-->
-							<form role="form" action="colleges.php" method="post">
+							<form role="form" action="colleges.php" method="post" id="collegeForm">
 								<div class="form-group">
 									<h1>Add a College Here!</h1>
 									<label for="name">Name of College:</label>
@@ -88,7 +90,7 @@
 									<label for="phoneNumber">Phone Number: </label>
 									<input type="text" class="form-control" name="pNumber" placeholder="Your Phone number here"/>
 								</div>
-								<button type="submit" class="btn btn-default" id="submit">Add College!</button>
+								<button type="submit" class="btn btn-default" id="submitCollege">Add College!</button>
 							</form>
 						<!--</div>-->
 					<!--</div>-->
@@ -96,18 +98,26 @@
 			</section>
 			<section id="content3">
 			<div class="container" id="rss">
-				RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED RSS FEED
-			</div> 
+				<?php include ("rssTransform.php");?>
+			</div>
 			</section>
 	</div>
 	
-	<section id="img2"></section>
+	<section id="img2">
+		<div class="container padding" id="img2MOB">
+			
+		</div>
+	</section>
 	<section id="content4">
 		<div class= "container" id="collegeList" >
 		<?php include ("xmlTransform.php");?>
 		</div>
 	</section>
-	<section id="img3"></section>
+	<section id="img3">
+		<div class="container padding" id="img3MOB">
+			
+		</div>
+	</section>
 	<section id="content5">
 		<div class="container padding" id="contact">
 		<form role="form" action="contact.php" method="post" id="contactForm">
@@ -243,7 +253,7 @@
 		        data: dataToSend,     
 		        cache: false,
 		        success: function(){
-		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>").fadeOut(7000);
+		         $("#formMessage").html("<h1>Contact Query successfully submitted, we will be in contact soon !</h1>").fadeIn(5000).fadeOut(7000);
 		         document.getElementById('contactForm').reset();
 		        },
 		        error: function(){
@@ -265,6 +275,31 @@
 		  });
 		});
 		
+		$(document).ready(function() {
+		  $("#submitCollege").click(function(e) {
+		      e.preventDefault();
+		
+		    var dataToSend = $("#collegeForm").serializeArray();
+		    $.ajax({                
+		        url: "colleges.php", 
+		        type: "POST",
+		        data: dataToSend,     
+		        cache: false,
+		    });
+		    return false;
+		  });
+		  
+		  $('#submitContactForm').bind('mouseover',function(){
+		  	var colour  = $(this).css("background-color");
+		  	var text_colour = $(this).css('color');
+		  	$(this).css('background', 'grey');
+		  	$(this).css('color', 'red');
+		  	$(this).bind('mouseout', function(){
+		  		$(this).css('background', colour);
+		  		$(this).css('color', text_colour);
+		  	});
+		  });
+		});
 		// $(document).ready(function(){
 		// 	$('#submitContactForm').click(function(){
 		// 		$('#contact_email').removeData("#contact_email");
