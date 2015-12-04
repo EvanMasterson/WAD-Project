@@ -12,6 +12,7 @@
 		  lat: 53.3437967,
 		  lng: -6.2567603,
 		  title: 'Trinity College Dublin',
+		  website: 'www.tcd.ie',
 		  infoWindow: {
           content: 'Trinity College Dublin<br/>College Green<br/>Dublin 2'
         }

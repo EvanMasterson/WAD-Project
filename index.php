@@ -91,7 +91,8 @@
 			<section id="content3">
 			<div class="container padding" id="rss">
 				<h2>RSS Feed</h2>
-				<div id="rssLoad"><?php include ("rssTransform.php");?></div>
+				<div class="glyphicon glyphicon-arrow-down"></div>
+				<div id="rssLoad"></div>
 			</div>
 			</section>
 	</div>
@@ -103,7 +104,7 @@
 	</section>
 	<section id="content4">
 		<div class= "container" id="collegeList" >
-		<?php include ("xmlTransform.php");?>
+		 <?php include ("xmlTransform.php");?>
 		</div>
 	</section>
 	<section id="img3">
@@ -217,6 +218,10 @@
 		        type: "POST",
 		        data: dataToSend,     
 		        cache: false,
+		        success:function(){
+		        document.getElementById('collegeForm').reset();
+		        $('#collegeList').load('xmlTransform.php');
+		        }
 		    });
 		    return false;
 		  });
@@ -225,6 +230,7 @@
 		$(document).ready(function(){
 			$('#rssLoad').hide();
 			$('#submitCollege').click(function(){
+				$('#rssLoad').load('rssTransform.php');
 				$('#rssLoad').fadeIn(4000);
 			});
 		});
