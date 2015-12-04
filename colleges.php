@@ -24,10 +24,10 @@ if(file_exists('colleges.xml')) {
     
     //adding new child to XML
     $newChild = $xml->addChild('college');
-    $newChild -> addChild('name', $cName);
-    $newChild -> addChild('address', $address);
-    $newChild -> addChild('postcode', $postcode);
-    $newChild -> addChild('type', $type);
+    $newChild -> addChild('name', $cName.', ');
+    $newChild -> addChild('address', $address.', ');
+    $newChild -> addChild('postcode', $postcode.', ');
+    $newChild -> addChild('type', $type.', ');
     $newChild -> addChild('phone', $pNumber);
     
     //transfering the object in XML format
@@ -54,8 +54,8 @@ if(file_exists('colleges.xml')) {
         
         $rssxml = simplexml_load_file('rss.xml');
         $newChild = $rssxml->channel->addChild('item');
-        $newChild->addChild('title', "New College added! ");
-        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io ");
+        $newChild->addChild('title', "New College added! - ");
+        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io - ");
         $newChild->addChild('description', $stringDesc);
         file_put_contents('rss.xml', $rssxml->asXML());
         

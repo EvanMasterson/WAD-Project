@@ -9,15 +9,19 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/scroller.css" />
+		<!-- For Maps -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0f_37S0OieQsnrm646prpK6JL2FlUvac"></script>
 		<script type="text/javascript" src="js/gmaps.js"></script>
+		<!-- For Image scroll -->
 		<script type = "text/javascript" href = "js/Scroll.js" > </script> 
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+  <!--		<script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+  <!--		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+		
+		<!--Map Markers-->
 		<script type="text/javascript" src="js/mapMarkers.js"></script>
 	
 		
@@ -43,59 +47,54 @@
 	</div>
 
 	<div id="cbp-fbscroller" class="cbp-fbscroller">
-	<nav>
-		<!-- <a href="#img1" class="cbp-fbcurrent">Section 1</a>
-		<a href="#img2">Section 2</a> -->
-
-
-	</nav>
-	
-	<section id="img1">
-		<div class="container padding" id="img1MOB">
+		<section id="img1">
+			<div class="container padding" id="img1MOB">
+				
+			</div>
+		</section> 
+		<div id="locator">
 			
-		</div>
-	</section> 
-	<div id="locator">
-	<section id="content1">
-		<div class="container" id="map" onload="mapMarkers()">
-		</div>
-		</section>
+			<section id="content1">
+				<div class="container" id="map" onload="mapMarkers()"></div>
+			</section>
+			
 			<section id="content2">
 				<div class="menuContainer padding" id="menu">
-							<form role="form" action="colleges.php" method="post" id="collegeForm">
-								<div class="form-group">
-									<h1>Add a College Here!</h1>
-									<label for="name">Name of College:</label>
-									<input type="text" class="form-control" name="cName" placeholder="College Name" />
-								</div>
-								<div class="form-group">
-									<label for="address">Address:</label>
-									<input type="text" class="form-control" name="address" placeholder="College Address here"/>
-								</div>
-								<div class="form-group">
-									<label for="postcode">Postcode: </label>
-									<input type="text" class="form-control" name="postcode" placeholder="College Postcode here"/>
-								</div>
-								<div class="form-group">
-									<label for="type">Type: </label>
-									<input type="text" class="form-control" name="type" placeholder="Univeristy/College/Other"/>
-								</div>
-								<div class="form-group">
-									<label for="phoneNumber">Phone Number: </label>
-									<input type="text" class="form-control" name="pNumber" placeholder="College Phone number here"/>
-								</div>
-								<button type="submit" class="btn btn-default" id="submitCollege">Add College!</button>
-							</form>
-			</div>
+					<form role="form" action="colleges.php" method="post" id="collegeForm">
+						<div class="form-group">
+							<h1>Add a College Here!</h1>
+							<label for="name">Name of College:</label>
+							<input type="text" class="form-control" name="cName" placeholder="College Name" />
+						</div>
+						<div class="form-group">
+							<label for="address">Address:</label>
+							<input type="text" class="form-control" name="address" placeholder="College Address here"/>
+						</div>
+						<div class="form-group">
+							<label for="postcode">Postcode: </label>
+							<input type="text" class="form-control" name="postcode" placeholder="College Postcode here"/>
+						</div>
+						<div class="form-group">
+							<label for="type">Type: </label>
+							<input type="text" class="form-control" name="type" placeholder="Univeristy/College/Other"/>
+						</div>
+						<div class="form-group">
+							<label for="phoneNumber">Phone Number: </label>
+							<input type="text" class="form-control" name="pNumber" placeholder="College Phone number here"/>
+						</div>
+						<button type="submit" class="btn btn-default" id="submitCollege">Add College!</button>
+					</form>
+				</div>
 			</section>
+			
 			<section id="content3">
-			<div class="container padding" id="rss">
-				<h2>RSS Feed</h2>
-				<div class="glyphicon glyphicon-arrow-down"></div>
-				<div id="rssLoad"></div>
-			</div>
+				<div class="container padding" id="rss">
+					<h2>RSS Feed</h2>
+					<div class="glyphicon glyphicon-arrow-down"></div>
+					<div id="rssLoad"></div>
+				</div>
 			</section>
-	</div>
+		</div>
 	
 	<section id="img2">
 		<div class="container padding" id="img2MOB">
@@ -103,7 +102,7 @@
 		</div>
 	</section>
 	<section id="content4">
-		<div class= "container" id="collegeList" >
+		<div class= "container" id="collegeList">
 		 <?php include ("xmlTransform.php");?>
 		</div>
 	</section>
@@ -118,17 +117,17 @@
 			<div class="form-group">
 				<h2>Contact Form</h2>
 				<label for="email">Email:</label>
-				<input type="email" class="form-control" class="contact_form" id="contact_email" name="contact_email" placeholder="example@example.com"/>
+				<input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="example@example.com" required/>
 			</div>
 			<div class="form-group">
 				<label for="name">Name:</label>
-				<input type="text" class="form-control"class="contact_form" id="contact_name" name="contact_name" placeholder="Your name here"/>
+				<input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="Your name here"/>
 			</div>
 			<div class="form-group">
 				<label for="message">Message:</label>
-				<textarea class="form-control" class="contact_form" name="contact_message" id="contact_message" placeholder="Your message here"></textarea>
+				<textarea class="form-control" name="contact_message" id="contact_message" placeholder="Your message here"></textarea>
 			</div>
-			<button type="submit" class="btn btn-default" id="submitContactForm">Submit</button>
+			<input type="submit" class="btn btn-default" id="submitContactForm"/>
 		</form>
 		<p id="formMessage"></p>
 	</div>	
@@ -201,8 +200,8 @@
 		  	$(this).css('background', 'grey');
 		  	$(this).css('color', 'red');
 		  	$(this).bind('mouseout', function(){
-		  		$(this).css('background', colour);
-		  		$(this).css('color', text_colour);
+		  	$(this).css('background', colour);
+		  	$(this).css('color', text_colour);
 		  	});
 		  });
 		});

@@ -1,6 +1,7 @@
 // JavaScript File
 /*global GMaps*/
 		var map;
+		var text = 'Website'
     	$(document).ready(function mapMarkers(){
 	      map = new GMaps({
 	        div: "#map",
@@ -14,7 +15,7 @@
 		  title: 'Trinity College Dublin',
 		  website: 'www.tcd.ie',
 		  infoWindow: {
-          content: 'Trinity College Dublin<br/>College Green<br/>Dublin 2'
+          content: 'Trinity College Dublin<br/>College Green<br/>Dublin 2',
         }
 		});
 		

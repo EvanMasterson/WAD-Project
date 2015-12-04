@@ -1,9 +1,3 @@
-/* #search{
-    color: white;
-} */
-
-
-
 #rss{
     color:purple;
     margin-top: 50px;
@@ -30,7 +24,10 @@
     color: #3190B0;
     font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
 }
-
+#formMessage{
+    display:none;
+    
+}
 
 #menu{ 
     color: white;
@@ -81,8 +78,6 @@
     color:orange;
     min-height:600px;
     width:auto;
-    /*margin-top:100px;*/
-    /*margin-bottom:50px;*/
     margin:4%;    /*
     For shadow behind map */
     background-color:#CCC;
@@ -93,33 +88,13 @@
 }
 
 
-#homeStyle{
+#homeStyle, #locationStyle, #cListStyle, #contactStyle  {
     color:#3190B0;
     text-decoration:none; 
     font-family:'Times New Roman', serif;
     font-size: 20px;
 }
 
-#locationStyle{
-    color:#3190B0;
-    text-decoration:none; 
-    font-family:'Times New Roman', serif;
-    font-size: 20px;
-}
-
-#cListStyle{
-    color:#3190B0;
-    text-decoration:none; 
-    font-family:'Times New Roman', serif;
-    font-size: 20px;
-}
-
-#contactStyle{
-    color:#3190B0;
-    text-decoration:none; 
-    font-family:'Times New Roman', serif;
-    font-size: 20px;
-}
 
 #FAFFooter{
     color: grey;
@@ -135,18 +110,3 @@
     position:relative;
     top:50px;
 }
-
-/*@media screen and(max-width:480px){*/
-/*    #menu{*/
-/*        float:none;*/
-/*    }*/
-    /* #menuHeader{
-        float: none;
-    }
-    #inputs{
-        width:auto;
-        height: auto;
-    } */
-/*}*/
-
-
