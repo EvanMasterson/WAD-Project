@@ -5,8 +5,8 @@
     	$(document).ready(function mapMarkers(){
 	      map = new GMaps({
 	        div: "#map",
-	        lat: 53.4857183,
-	        lng: -7.2826004
+	        lat: 53.4787647,
+	        lng : -7.5264744
 	      });
 	      
 	      map.addMarker({
@@ -15,7 +15,7 @@
 		  title: 'Trinity College Dublin',
 		  website: 'www.tcd.ie',
 		  infoWindow: {
-          content: 'Trinity College Dublin<br/>College Green<br/>Dublin 2',
+          content: 'Trinity College Dublin<br/>College Green<br/>Dublin 2'
         }
 		});
 		

@@ -1,3 +1,4 @@
+
 #rss{
     color:purple;
     margin-top: 50px;
@@ -75,10 +76,10 @@
 
 
 #map{
-    color:orange;
+    color:black;
     min-height:600px;
     width:auto;
-    margin:4%;    /*
+    margin:7%;    /*
     For shadow behind map */
     background-color:#CCC;
     position:relative;
