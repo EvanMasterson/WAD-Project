@@ -84,7 +84,7 @@
 				<div class="container padding" id="rss">
 					<h2>RSS Feed</h2>
 					<div class="glyphicon glyphicon-arrow-down"></div>
-					<div id="rssLoad"></div>
+					<a href="#collegeList" id="noDecoration"><div id="rssLoad"></div></a>
 				</div>
 			</section>
 		</div>

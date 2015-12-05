@@ -6,6 +6,11 @@
     text-align:center;
 }
 
+#noDecoration{
+    text-decoration:none;
+    color:purple;
+}
+
 #contact h2{
     color:#3190B0;
     font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;

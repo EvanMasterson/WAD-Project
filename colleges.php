@@ -55,7 +55,7 @@ if(file_exists('colleges.xml')) {
         $rssxml = simplexml_load_file('rss.xml');
         $newChild = $rssxml->channel->addChild('item');
         $newChild->addChild('title', "New College added! - ");
-        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io - ");
+        $newChild->addChild('link', "https://wad-project-evanmasterson.c9users.io - Click to view College List! - ");
         $newChild->addChild('description', $stringDesc);
         file_put_contents('rss.xml', $rssxml->asXML());
         
