@@ -24,11 +24,11 @@ if(file_exists('colleges.xml')) {
     
     //adding new child to XML
     $newChild = $xml->addChild('college');
-    $newChild -> addChild('name', $cName.', ');
-    $newChild -> addChild('address', $address.', ');
-    $newChild -> addChild('postcode', $postcode.', ');
-    $newChild -> addChild('type', $type.', ');
-    $newChild -> addChild('phone', $pNumber);
+    $newChild -> addChild('name', $cName.", ");
+    $newChild -> addChild('address', $address.", ");
+    $newChild -> addChild('postcode', $postcode.", ");
+    $newChild -> addChild('type', $type.", ");
+    $newChild -> addChild('phone', $pNumber." ");
     
     //transfering the object in XML format
     $xmlFormat = $xml->asXML();
