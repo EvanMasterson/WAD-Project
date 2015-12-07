@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="shortcut icon" href="img/logo.png" >
 		<title>Find a Future</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.css" />
@@ -23,7 +24,8 @@
 		<div class="navbar-static-top navbar-inverse" id="home">
 		<div class="container padding" >
 			<div class="navbar-brand">
-			Find-a-Future
+				Find-a-Future
+			
 		    </div>
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 				Menu

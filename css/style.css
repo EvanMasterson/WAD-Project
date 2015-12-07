@@ -6,6 +6,10 @@
     text-align:center;
 }
 
+#icon{
+    background-image: url(""../img/icon.png");
+}
+
 #noDecoration{
     text-decoration:none;
     color:purple;
